@@ -1,0 +1,74 @@
+What jdk contains or composed of and define each components?
+Answer: A Java Development Kit (JDK) is a program development environment for writing Java applets and applications.
+What is IDE?
+Answer: A Java IDE (Integrated Development Environment) is a software application which enables users to more easily write and debug java program.
+What are the IDEs available in the market to support java?
+Answer: There are many IDEs in the market, but most popular ones: Eclipse, NetBeans, IntelliJ IDEA, JetBrains. Jcreator and etc.
+Explain the entire java life cycle.
+Answer: 
+1. Compile source code to bytecode using Java Compiler (javac.exe), and get Classname.class file.
+2. JVM load (by java.exe) and verify this bytecode (class) file.
+3. The Execution Engine in JVM presents the result on the operating system.
+what is class?
+Answer: A class is an extensible program-code-template for creating objects, providing initial values for state (member variables) and implementations of behavior (member functions, methods).
+What is object?
+Answer: Object is an instance of a Java class. An object can be a variable, a data structure, or a function. 
+What is the entry point of an application?
+Answer: An entry point is where control enters a program or piece of code. In many programming languages, the main function is where a program starts its execution. 
+Why main is static?
+Answer: The public static void keywords mean the Java virtual machine (JVM) interpreter can call the program's main method to start the program (public) without creating an instance of the class (static), and the program does not return data to the Java VM interpreter (void) when it ends.
+What is the difference between an Interface and Abstract class?
+Answer: Interface: only can declare method. Abstract Class: can declare method, can implement method.
+Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+We can't create object out of an interface or Abstract class because main intention of creating an object is to utilize the wrapped methods and data. As interface don't have any concrete implementation hence we cannot.
+what is Access Specifier?
+Java Access Specifiers (also known as Visibility Specifiers ) regulate access to classes, fields and methods in Java.These Specifiers determine whether a field or method in a class, can be used or invoked by another method in another class or sub-class. Access Specifiers can be used to restrict access. Access Specifiers are an integral part of object-oriented programming.
+What is OOP ? Define each feature of java OOP.
+Object-oriented programming (OOP) is a programming language model organized around objects rather than "actions" and data rather than logic.
+Inheritance: Inheritance is a mechanism wherein a new class is derived from an existing class.
+Polymorphism:Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object. 
+Abstraction - Abstraction is the process of abstraction in Java is used to hide certain details and only show the essential features of the object.
+Encapsulation: Encapsulation can be described as a protective barrier that prevents the code and data being randomly accessed by other code defined outside the class. Access to the data and code is tightly controlled by an interface.
+What is API? Name list of API that you have used so far.
+Application Programming Interface.
+Does java support multiple inheritance?
+No,But it supports multiple inheritance of type, which is the ability of a class to implement more than one interface. 
+What is method overloading and when it happens?
+Method overloading deals with the notion of having two or more methods(functions) in the same class with the same name but different arguments. Overloading happens at compile time. 
+What is method overriding and when it happens?
+Method overriding means having two methods with the same arguments, but different implementation. One of them would exist in the Parent class (Base Class) while another will be in the derived class(Child Class).Overriding happens at the run time. 
+Explain exceptions in java and how to handle it.
+An exception is an event that occurs during the execution of a program that disrupts the normal flow of instructions. We can use the three exception handler components - the try, catch, and finally blocks - to write an exception handler.
+What is static keyword in java? How it has been used in variables and methods ?
+The static keyword in Java means that the variable or function is shared between all instances of that class as it belongs to the type, not the actual objects themselves. Static variable belongs to class, not belong to object
+What is final and how it has been used variables and methods?
+Finalizing the value of the variable so that no change can be made.
+A final class cannot be subclass. All methods in a final class are implicitly final.
+A final method cannot be overridden or hidden by subclass.
+Static Variable - Declaring any variable as static, it is known static variable. The static variable can be used to refer the 
+What is final, finally and finalize?
+Final: final is a keyword. The variable declared as final should be initialized only once and cannot be changed. Java classes declared as final cannot be extended. Methods declared as final cannot be overridden.
+Finally: finally is a block. The finally block always executes when the try block exits This ensures that the finally block is executed even if an unexpected exception occurs But finally is useful for more than just exception handling - it allows the programmer to avoid having cleanup code accidentally bypassed by a return, continue, or break.
+Finalize: finalize is a method. Before an object is garbage collected, the runtime system calls its finalize() method.
+What is a constructor ?
+A constructor is a bit of code that allows you to create objects from a class
+What is "this" keyword in java ?
+this is a reference to the current object — the object whose method or constructor is being called.
+What is "super" keyword in java?
+Java Programming/Keywords/super. It is used inside a sub-class method definition to call a method defined in the super class. Private methods of the super-class cannot be called. Only public and protected methods can be called by the super keyword.
+What is JVM stand for ?
+Java virtual machine.
+What version of java are you using?
+ Java SE-1.8
+What is JAR stand for ?
+JAR stands for "Java Archive". A JAR file is basically a zip-file which contains a couple of class files and a text file containing some meta information.
+What is compile time and run time?
+A compiled program can be opened and run by a user. When an application is running, it is called runtime.
+What is heap?
+Heap is an area of pre-reserved computer main storage ( memory ) that a program process can use to store data in some variable amount that won't be known until the program is running. 
+How java manage it's memory?
+The JVM divided the memory into following sections. 
+1. Heap: The Heap section contains Objects (may also contain reference variables).
+2. Stack: The Stack section of memory contains methods, local variables and reference variables
+3. Code: The code section contains your byte code.
+4. Static: The Static section contains Static data/methods.
